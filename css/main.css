@@ -6,8 +6,13 @@
 body{
     font-family: 'montserrat', sans-serif;
     background-image: url(../bg-picture.webp);
+    
+    background-repeat: no-repeat;
+    object-position: center;
     background-size: cover;
     background-position: top center;
+    object-fit: cover;
+    
 }
 .app-wrap{
     display: grid;
@@ -56,7 +61,6 @@ main{
 .location .date{
     color: #fff;
     font-size: 16px;
-    display: none;
 }
 .main-temp .temp{
      color: #fff;
