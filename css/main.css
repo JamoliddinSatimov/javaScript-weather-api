@@ -8,23 +8,23 @@ body{
     background-image: url(../bg-picture.webp);
     
     background-repeat: no-repeat;
-    object-position: center;
     background-size: cover;
-    background-position: top center;
-    object-fit: cover;
+    background-position: center center;
     
 }
 .app-wrap{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 100vh; */
     background-image: linear-gradient(to bottom, rgba(0,0,0,.3),rgba(0,0,0,.6));
 }
 header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 15px 15px;
+    padding:15px;
+    width: 50%;
 }
 header input{
     width: 100%;
@@ -46,11 +46,13 @@ header input:focus{
 }
 main{
     margin-top: 20vh;
-    padding: 25px 25px 50px;
+    padding: 20px 15px 145px 25px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    width: 50%;
 }
 .location .city{
     color: #fff;
@@ -88,10 +90,11 @@ main{
     text-shadow:  0 3px rgba(0,0,0,.6);
 }
 @media (max-width:900px) {
-    .app-wrap{
-        grid-template-columns: 100% 100%;
+    header{
+        width: 100vh;
     }
     .main{
-        margin-top: 50px;
+        width: 100vh;
+        margin-top: 5vh!important;
     }
 }
