@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'montserrat', sans-serif;
-    background-image: url(../bg-picture.webp);
+    background-image: url(../sky-clouds-background.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,8 @@ header input:focus{
 }
 main{
     margin-top: 20vh;
-    padding: 20px 15px 145px 25px;
+    margin-bottom: 18.5vh;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,6 +96,6 @@ main{
     }
     .main{
         width: 100vh;
-        margin-top: 5vh!important;
+        margin: 0!important;
     }
 }
